@@ -10,5 +10,5 @@
 		$renho = $_GET["renho"];
 		$responce = new StdClass;
 		$responce->backJson = $renho;
-		echo json_encode($responce);
+		echo json_encode($responce); 
 	}
