@@ -3,10 +3,10 @@ $mypic = $_FILES ["mypic"];
 if (! empty ( $mypic )) {
 	$picname = $_FILES ['mypic'] ['name'];
 	$picsize = $_FILES ['mypic'] ['size'];
-	if ($picsize > 512000) {
+	/*if ($picsize > 512000) {
 		echo '图片大小不能超过500k';
 		exit ();
-	}
+	}*/
 	$type = strstr ( $picname, '.' );
 	if ($type != ".gif" && $type != ".jpg") {
 		echo '图片格式不对！';
